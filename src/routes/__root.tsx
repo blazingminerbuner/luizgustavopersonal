@@ -91,6 +91,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Luiz Gustavo — Consultoria Fitness Online" },
+      { name: "description", content: "Gustavo's Academy Refresh creates a professional online presence for personal trainers." },
+      { property: "og:description", content: "Gustavo's Academy Refresh creates a professional online presence for personal trainers." },
+      { name: "twitter:description", content: "Gustavo's Academy Refresh creates a professional online presence for personal trainers." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3d392045-2d02-485e-96ba-3a78299a5a81/id-preview-cf30bc48--ead85d34-ad9a-4623-830e-2ea72fbfd0e2.lovable.app-1780329053267.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3d392045-2d02-485e-96ba-3a78299a5a81/id-preview-cf30bc48--ead85d34-ad9a-4623-830e-2ea72fbfd0e2.lovable.app-1780329053267.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
