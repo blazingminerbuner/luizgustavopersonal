@@ -1,22 +1,27 @@
 import { Reveal, StaggerGroup, itemVariants } from "./Reveal";
 import { motion } from "motion/react";
+import { Target, Zap, TrendingUp, ShieldCheck, type LucideIcon } from "lucide-react";
 
-const steps = [
+const steps: { title: string; desc: string; Icon: LucideIcon }[] = [
   {
     title: "Avaliação Completa",
     desc: "Análise física, rotina, histórico e objetivos antes de qualquer prescrição.",
+    Icon: Target,
   },
   {
     title: "Estratégia Individual",
     desc: "Treino e dieta ajustados para adesão, rotina e evolução progressiva.",
+    Icon: Zap,
   },
   {
     title: "Acompanhamento Contínuo",
     desc: "Ajustes frequentes com base na resposta do corpo.",
+    Icon: TrendingUp,
   },
   {
     title: "Evolução Sustentável",
     desc: "Resultado que se mantém ao longo do tempo.",
+    Icon: ShieldCheck,
   },
 ];
 
