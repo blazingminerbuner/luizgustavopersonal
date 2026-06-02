@@ -43,14 +43,15 @@ export function Benefits() {
             <motion.div
               key={it.title}
               variants={itemVariants}
-              whileHover={{ y: -4 }}
-              className="rounded-2xl border border-border/60 bg-card/60 p-7 transition-colors hover:border-primary/50"
+              whileHover={{ y: -4, scale: 1.02 }}
+              className="group relative overflow-hidden rounded-2xl border border-primary/20 bg-card/50 p-7 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/70 hover:shadow-[0_12px_40px_-12px_color-mix(in_oklab,var(--primary)_18%,transparent)]"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-primary/40 bg-primary/10 text-primary">
-                <it.icon className="h-5 w-5" />
+              <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-primary/5 opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-primary shadow-[0_8px_24px_-8px_color-mix(in_oklab,var(--primary)_40%,transparent)]">
+                <it.icon className="h-5 w-5" strokeWidth={2} />
               </div>
               <h3 className="mt-5 text-lg font-semibold text-foreground">{it.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{it.desc}</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{it.desc}</p>
             </motion.div>
           ))}
         </StaggerGroup>
