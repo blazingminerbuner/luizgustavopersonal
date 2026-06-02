@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Zap, ArrowRight } from "lucide-react";
+import { Zap, ArrowRight, Target, ShieldCheck, TrendingUp } from "lucide-react";
 import { MediaSlot } from "./MediaSlot";
 
 const headline1 = "Transforme seu corpo com um método aplicado em";
@@ -80,17 +80,22 @@ export function Hero() {
           </motion.button>
 
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.6 }}
-            className="mt-10 flex flex-wrap items-center justify-center gap-3 text-xs text-muted-foreground sm:text-sm"
+            className="mt-10 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm"
           >
-            {["Resultados reais", "Método aplicado", "Acompanhamento contínuo"].map((p) => (
+            {[
+              { label: "Resultados reais", Icon: Target },
+              { label: "Método aplicado", Icon: ShieldCheck },
+              { label: "Acompanhamento contínuo", Icon: TrendingUp },
+            ].map(({ label, Icon }) => (
               <span
-                key={p}
-                className="rounded-full border border-border/60 bg-card/40 px-4 py-1.5"
+                key={label}
+                className="group inline-flex items-center gap-2 rounded-full border border-primary/25 bg-card/60 px-4 py-2 font-medium text-foreground/90 backdrop-blur-sm transition-all duration-300 hover:border-primary/60 hover:bg-card/80 hover:shadow-[0_0_24px_-6px_color-mix(in_oklab,var(--primary)_55%,transparent)]"
               >
-                {p}
+                <Icon className="h-3.5 w-3.5 text-primary" strokeWidth={2} />
+                {label}
               </span>
             ))}
           </motion.div>
