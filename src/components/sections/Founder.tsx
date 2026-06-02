@@ -1,12 +1,19 @@
 import { Reveal } from "./Reveal";
-import { MediaSlot } from "./MediaSlot";
+import luizGustavoPhoto from "@/assets/luiz-gustavo.webp.asset.json";
 
 export function Founder() {
   return (
     <section id="fundador" className="relative py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2">
         <Reveal>
-          <MediaSlot aspect="aspect-[4/5]" rounded="rounded-3xl" label="Foto do profissional" />
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-primary/15 bg-card/60">
+            <img
+              src={luizGustavoPhoto.url}
+              alt="Luiz Gustavo, personal trainer"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </Reveal>
 
         <Reveal delay={0.1}>
