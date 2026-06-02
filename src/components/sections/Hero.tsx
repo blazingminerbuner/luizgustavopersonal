@@ -10,6 +10,14 @@ export function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden pt-28">
+      {/* Grid background */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: `linear-gradient(to right, color-mix(in oklab, var(--primary) 6%, transparent) 1px, transparent 1px), linear-gradient(to bottom, color-mix(in oklab, var(--primary) 6%, transparent) 1px, transparent 1px)`,
+          backgroundSize: "60px 60px",
+        }}
+      />
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
