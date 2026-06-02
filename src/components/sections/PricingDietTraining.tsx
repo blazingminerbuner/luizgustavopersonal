@@ -61,17 +61,29 @@ export function PricingDietTraining() {
           </p>
         </Reveal>
 
-        <Reveal className="mx-auto mt-12 max-w-3xl rounded-2xl border border-border/60 bg-card/60 p-8">
-          <h3 className="text-lg font-semibold text-foreground">O que está incluso:</h3>
-          <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+        <Reveal className="mx-auto mt-12 max-w-3xl rounded-3xl border border-primary/20 bg-card/50 p-8 backdrop-blur-sm shadow-[0_12px_40px_-12px_color-mix(in_oklab,var(--primary)_18%,transparent)] sm:p-10">
+          <div className="flex items-center gap-3">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary shadow-[0_8px_24px_-8px_color-mix(in_oklab,var(--primary)_50%,transparent)]">
+              <Check className="h-5 w-5" strokeWidth={3} />
+            </span>
+            <h3 className="text-xl font-bold tracking-tight text-primary sm:text-2xl">
+              O que está incluso:
+            </h3>
+          </div>
+          <ul className="mt-7 grid gap-3">
             {included.map((it) => (
-              <li key={it} className="flex items-start gap-2 text-sm text-muted-foreground">
-                <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+              <li
+                key={it}
+                className="flex items-center gap-3 rounded-xl border border-primary/10 bg-primary/[0.04] px-4 py-3 text-sm font-medium text-foreground/90 transition-all hover:border-primary/30 hover:bg-primary/[0.08]"
+              >
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
+                  <Check className="h-3.5 w-3.5" strokeWidth={3} />
+                </span>
                 {it}
               </li>
             ))}
           </ul>
-          <p className="mt-5 text-xs italic text-muted-foreground">
+          <p className="mt-6 border-l-2 border-primary/60 pl-4 text-xs italic text-muted-foreground">
             P.S: As dietas são montadas pelas nutricionistas da minha equipe!
           </p>
         </Reveal>
