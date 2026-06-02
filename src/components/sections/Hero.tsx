@@ -12,7 +12,7 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden pt-28">
       {/* Grid background */}
       <div
-        className="pointer-events-none absolute inset-0"
+        className="pointer-events-none absolute inset-0 z-0"
         style={{
           backgroundImage: `linear-gradient(to right, color-mix(in oklab, var(--primary) 6%, transparent) 1px, transparent 1px), linear-gradient(to bottom, color-mix(in oklab, var(--primary) 6%, transparent) 1px, transparent 1px)`,
           backgroundSize: "60px 60px",
@@ -23,6 +23,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          className="relative z-10"
         >
           <div className="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-primary/15 shadow-[0_30px_80px_-30px_color-mix(in_oklab,var(--primary)_35%,transparent)]">
             <img
