@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Zap, ArrowRight } from "lucide-react";
+import { Zap, ArrowRight, Target, ShieldCheck, TrendingUp } from "lucide-react";
 import { MediaSlot } from "./MediaSlot";
 
 const headline1 = "Transforme seu corpo com um método aplicado em";
