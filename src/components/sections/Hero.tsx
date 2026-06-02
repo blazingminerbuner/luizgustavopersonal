@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Zap, ArrowRight, Target, ShieldCheck, TrendingUp } from "lucide-react";
-import { MediaSlot } from "./MediaSlot";
+import heroGroup from "@/assets/hero-group.webp.asset.json";
 
 const headline1 = "Transforme seu corpo com um método aplicado em";
 const accent = "resultados reais.";
@@ -24,12 +24,14 @@ export function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         >
-          <MediaSlot
-            aspect="aspect-[16/9]"
-            rounded="rounded-3xl"
-            className="mx-auto max-w-5xl"
-            label="Imagem principal"
-          />
+          <div className="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-primary/15 shadow-[0_30px_80px_-30px_color-mix(in_oklab,var(--primary)_35%,transparent)]">
+            <img
+              src={heroGroup.url}
+              alt="Equipe e alunos da consultoria Luiz Gustavo"
+              className="aspect-[16/9] w-full object-cover"
+              loading="eager"
+            />
+          </div>
         </motion.div>
 
         <div className="mx-auto mt-12 flex max-w-4xl flex-col items-center text-center">
