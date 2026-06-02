@@ -20,17 +20,38 @@ export function HowItWorks() {
           </h2>
         </Reveal>
 
-        <StaggerGroup className="mt-16 grid gap-6 md:grid-cols-3">
+        <StaggerGroup className="relative mt-16 grid gap-6 md:grid-cols-3">
+          {/* connecting line (desktop only) */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute left-[16.66%] right-[16.66%] top-10 hidden h-px md:block"
+            style={{
+              background:
+                "linear-gradient(to right, transparent, color-mix(in oklab, var(--primary) 45%, transparent), transparent)",
+            }}
+          />
           {steps.map((s, i) => (
             <motion.div
               key={s}
               variants={itemVariants}
-              className="relative rounded-2xl border border-border/60 bg-card/60 p-8 text-center"
+              className="relative flex flex-col items-center rounded-2xl p-8 text-center"
             >
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-2xl font-bold text-primary">
-                {i + 1}
-              </div>
-              <p className="mt-6 text-base font-medium text-foreground">{s}</p>
+              <motion.div
+                whileHover={{ y: -3, scale: 1.04 }}
+                transition={{ type: "spring", stiffness: 280, damping: 20 }}
+                className="relative flex h-20 w-20 items-center justify-center rounded-2xl bg-primary text-3xl font-bold text-primary-foreground shadow-[0_18px_45px_-12px_color-mix(in_oklab,var(--primary)_70%,transparent)]"
+              >
+                <span
+                  aria-hidden
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    background:
+                      "linear-gradient(160deg, color-mix(in oklab, white 25%, transparent), transparent 55%)",
+                  }}
+                />
+                <span className="relative">{i + 1}</span>
+              </motion.div>
+              <p className="mt-8 max-w-[220px] text-base font-medium text-foreground">{s}</p>
             </motion.div>
           ))}
         </StaggerGroup>
