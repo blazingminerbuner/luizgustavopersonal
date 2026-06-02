@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Zap, ArrowRight, Target, ShieldCheck, TrendingUp } from "lucide-react";
-import { MediaSlot } from "./MediaSlot";
+import heroGroup from "@/assets/hero-group.webp.asset.json";
 
 const headline1 = "Transforme seu corpo com um método aplicado em";
 const accent = "resultados reais.";
