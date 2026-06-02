@@ -21,10 +21,10 @@ export function HowItWorks() {
         </Reveal>
 
         <StaggerGroup className="relative mt-16 grid gap-6 md:grid-cols-3">
-          {/* connecting line (desktop only) */}
+          {/* connecting line (desktop only) — aligned to vertical center of the number badges */}
           <div
             aria-hidden
-            className="pointer-events-none absolute left-[16.66%] right-[16.66%] top-10 hidden h-px md:block"
+            className="pointer-events-none absolute left-[16.66%] right-[16.66%] top-[72px] hidden h-px md:block"
             style={{
               background:
                 "linear-gradient(to right, transparent, color-mix(in oklab, var(--primary) 45%, transparent), transparent)",
@@ -34,7 +34,7 @@ export function HowItWorks() {
             <motion.div
               key={s}
               variants={itemVariants}
-              className="relative flex flex-col items-center rounded-2xl p-8 text-center"
+              className="relative z-10 flex flex-col items-center rounded-2xl p-8 text-center"
             >
               <motion.div
                 whileHover={{ y: -3, scale: 1.04 }}
