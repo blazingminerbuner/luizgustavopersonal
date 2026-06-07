@@ -104,7 +104,7 @@ export function PricingTraining() {
             Planos
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            Escolha o nível de acompanhamento ideal
+            Consultoria Online — Dieta e Treino
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
             Todos os planos seguem a mesma metodologia. O que muda é o tempo de acompanhamento.
