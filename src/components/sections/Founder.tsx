@@ -3,7 +3,7 @@ import luizGustavoPhoto from "@/assets/luiz-gustavo.webp.asset.json";
 
 export function Founder() {
   return (
-    <section id="fundador" className="relative py-28">
+    <section id="fundador" className="relative py-16">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2">
         <Reveal>
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-primary/15 bg-card/60">

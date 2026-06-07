@@ -91,7 +91,7 @@ const trainingPlans: Plan[] = [
 
 export function PricingTraining() {
   return (
-    <section id="planos" className="relative py-28">
+    <section id="planos" className="relative py-16">
       <div className="mx-auto max-w-7xl px-6">
         <Reveal className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-primary">

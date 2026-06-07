@@ -9,7 +9,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="relative py-28">
+    <section className="relative py-16">
       <div className="mx-auto max-w-7xl px-6">
         <Reveal className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-primary">

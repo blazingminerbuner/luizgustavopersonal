@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export function Event() {
   return (
-    <section id="evento" className="relative py-28">
+    <section id="evento" className="relative py-16">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <Reveal>

@@ -26,7 +26,7 @@ function Row({ items, direction }: { items: unknown[]; direction: "left" | "righ
 
 export function Transformations() {
   return (
-    <section id="transformacoes" className="relative py-28">
+    <section id="transformacoes" className="relative py-16">
       <div className="mx-auto max-w-7xl px-6 text-center">
         <Reveal>
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
