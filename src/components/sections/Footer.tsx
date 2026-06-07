@@ -9,7 +9,7 @@ const socials = [
 
 export function Footer() {
   return (
-    <footer id="contato" className="border-t border-border/60 py-16">
+    <footer id="contato" className="border-t border-border/60 bg-background py-16">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2 md:items-center">
         <div>
           <img src={logoAsset.url} alt="Luiz Gustavo" className="h-14 w-auto" />
