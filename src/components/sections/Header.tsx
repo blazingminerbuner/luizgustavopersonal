@@ -4,6 +4,7 @@ import logoAsset from "@/assets/logo-lg.svg.asset.json";
 const links = [
   { label: "Projetos", href: "#transformacoes" },
   { label: "Sobre", href: "#fundador" },
+  { label: "Planos", href: "#planos" },
   { label: "Contato", href: "#contato" },
 ];
 
