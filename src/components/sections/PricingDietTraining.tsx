@@ -1,6 +1,5 @@
-import { Reveal, StaggerGroup } from "./Reveal";
+import { Reveal } from "./Reveal";
 import { Check } from "lucide-react";
-import { PlanCard, type Plan } from "./PricingTraining";
 
 const included = [
   "Treino individualizado (Acesso ao meu aplicativo)",
