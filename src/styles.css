@@ -93,6 +93,18 @@
     color: var(--color-foreground);
     font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
+    position: relative;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+      linear-gradient(to right, color-mix(in oklab, var(--primary) 6%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--primary) 6%, transparent) 1px, transparent 1px);
+    background-size: 60px 60px;
   }
 }
 
