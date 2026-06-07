@@ -1,6 +1,5 @@
-import { Reveal, StaggerGroup } from "./Reveal";
+import { Reveal } from "./Reveal";
 import { Check } from "lucide-react";
-import { PlanCard, type Plan } from "./PricingTraining";
 
 const included = [
   "Treino individualizado (Acesso ao meu aplicativo)",
@@ -11,39 +10,6 @@ const included = [
   "Meu acompanhamento direto e individualizado via WhatsApp",
 ];
 
-const plans: Plan[] = [
-  {
-    name: "Mensal",
-    price: "R$ 600,00",
-    subtitle: "Dieta + Treino",
-    validity: "*Válido por 1 mês",
-    features: included,
-  },
-  {
-    name: "Trimestral",
-    price: "R$ 1.300,00",
-    subtitle: "Dieta + Treino",
-    validity: "*Válido por 3 meses",
-    features: included,
-    badge: "Melhor custo-benefício",
-  },
-  {
-    name: "Semestral",
-    price: "R$ 1.950,00",
-    subtitle: "Dieta + Treino",
-    validity: "*Válido por 6 meses",
-    features: included,
-    featured: true,
-    badge: "Melhor custo-benefício",
-  },
-  {
-    name: "Anual",
-    price: "R$ 3.700,00",
-    subtitle: "Dieta + Treino",
-    validity: "*Válido por 12 meses",
-    features: included,
-  },
-];
 
 export function PricingDietTraining() {
   return (
@@ -88,11 +54,6 @@ export function PricingDietTraining() {
           </p>
         </Reveal>
 
-        <StaggerGroup className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {plans.map((p) => (
-            <PlanCard key={p.name} plan={p} />
-          ))}
-        </StaggerGroup>
       </div>
     </section>
   );
