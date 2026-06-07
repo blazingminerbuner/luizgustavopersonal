@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export function FinalCTA() {
   return (
-    <section className="relative py-28">
+    <section className="relative py-16">
       <div className="mx-auto max-w-5xl px-6">
         <Reveal>
           <div className="relative overflow-hidden rounded-3xl border border-primary/40 bg-gradient-to-b from-primary/10 to-card/60 px-8 py-16 text-center sm:px-16">

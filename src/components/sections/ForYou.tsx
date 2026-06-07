@@ -6,7 +6,7 @@ const no = ["Quer milagres", "Não segue estratégia", "Procura plano genérico"
 
 export function ForYou() {
   return (
-    <section className="relative py-28">
+    <section className="relative py-16">
       <div className="mx-auto max-w-7xl px-6">
         <Reveal className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">

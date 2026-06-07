@@ -9,7 +9,7 @@ export function Hero() {
   const words = headline1.split(" ");
 
   return (
-    <section id="top" className="relative overflow-hidden pt-28">
+    <section id="top" className="relative overflow-hidden pt-16">
       <div className="mx-auto max-w-7xl px-6">
 
         <motion.div
