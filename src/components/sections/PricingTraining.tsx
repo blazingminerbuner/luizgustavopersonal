@@ -78,21 +78,15 @@ const trainingPlans: Plan[] = [
     features: [...baseFeatures, "3 Meses Acompanhamento"],
   },
   {
-    name: "Semestral",
-    price: "R$ 867,00",
-    subtitle: "6 Planos Treino",
-    validity: "*Válido por 6 meses",
-    badge: "Melhor custo-benefício",
-    featured: true,
-    features: [...baseFeatures, "6 Meses Acompanhamento"],
-  },
-  {
     name: "Anual",
     price: "R$ 1.597,00",
     subtitle: "12 Planos Treino",
     validity: "*Válido por 12 meses",
+    badge: "Melhor custo-benefício",
+    featured: true,
     features: [...baseFeatures, "12 Meses Acompanhamento"],
   },
+
 ];
 
 export function PricingTraining() {
@@ -111,7 +105,7 @@ export function PricingTraining() {
           </p>
         </Reveal>
 
-        <StaggerGroup className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <StaggerGroup className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {trainingPlans.map((p) => (
             <PlanCard key={p.name} plan={p} />
           ))}
