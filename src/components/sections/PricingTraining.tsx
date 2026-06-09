@@ -65,28 +65,27 @@ const baseFeatures = [
 const trainingPlans: Plan[] = [
   {
     name: "Mensal",
-    price: "R$ 297,00",
+    price: "R$ 279,90",
     subtitle: "1 Plano Treino",
     validity: "*Válido por 1 mês",
     features: [...baseFeatures, "1 Mês Acompanhamento"],
   },
   {
     name: "Trimestral",
-    price: "R$ 587,00",
+    price: "R$ 675,90",
     subtitle: "3 Planos Treino",
     validity: "*Válido por 3 meses",
     features: [...baseFeatures, "3 Meses Acompanhamento"],
   },
   {
     name: "Anual",
-    price: "R$ 1.597,00",
+    price: "R$ 1109,90",
     subtitle: "12 Planos Treino",
     validity: "*Válido por 12 meses",
     badge: "Melhor custo-benefício",
     featured: true,
     features: [...baseFeatures, "12 Meses Acompanhamento"],
   },
-
 ];
 
 export function PricingTraining() {
