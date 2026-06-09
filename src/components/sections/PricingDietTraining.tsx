@@ -4,7 +4,7 @@ import { Check } from "lucide-react";
 const included = [
   "Treino individualizado (Acesso ao meu aplicativo)",
   "Dieta personalizada",
-  "Suplementação",
+  "Orientação para suplementação",
   "Protocolos",
   "Contato de suporte",
   "Meu acompanhamento direto e individualizado via WhatsApp",
