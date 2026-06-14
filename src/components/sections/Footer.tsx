@@ -1,5 +1,5 @@
 import { Instagram } from "lucide-react";
-import logoAsset from "@/assets/logo-lg.svg.asset.json";
+import logoAsset from "@/assets/logo-lg.png.asset.json";
 
 function TikTokIcon({ className }: { className?: string }) {
   return (

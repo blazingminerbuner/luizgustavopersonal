@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logoAsset from "@/assets/logo-lg.svg.asset.json";
+import logoAsset from "@/assets/logo-lg.png.asset.json";
 
 const links = [
   { label: "Projetos", href: "#transformacoes" },
