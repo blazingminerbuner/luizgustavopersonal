@@ -32,7 +32,7 @@ export function PlanCard({ plan }: { plan: Plan }) {
       <div className="mt-4">
         <span className="text-3xl font-bold text-foreground">{plan.price}</span>
       </div>
-      <p className="mt-1 text-sm text-primary">{plan.subtitle}</p>
+      
       <p className="mt-1 text-xs text-muted-foreground">{plan.validity}</p>
 
       <ul className="mt-6 flex-1 space-y-3">
