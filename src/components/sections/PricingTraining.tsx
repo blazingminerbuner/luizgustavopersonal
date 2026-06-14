@@ -58,6 +58,7 @@ const baseFeatures = [
   "Casa ou Academia",
   "App de Treinos",
   "Vídeos de Execução",
+  "Protocolo alimentar",
   "Contato via Whatsapp",
 ];
 
