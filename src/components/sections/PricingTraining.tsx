@@ -77,7 +77,6 @@ const trainingPlans: Plan[] = [
   {
     name: "Anual",
     price: "R$ 1109,90",
-    subtitle: "12 Planos Treino",
     validity: "*Válido por 12 meses",
     badge: "Melhor custo-benefício",
     featured: true,
