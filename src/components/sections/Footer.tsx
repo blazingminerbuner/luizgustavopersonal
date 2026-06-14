@@ -31,18 +31,6 @@ export function Footer() {
             ))}
           </div>
         </div>
-        <div className="md:text-right">
-          <h3 className="text-lg font-semibold text-foreground">Ainda tem dúvidas?</h3>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Fale diretamente com o time no WhatsApp.
-          </p>
-          <button
-            type="button"
-            className="btn-glow mt-5 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground"
-          >
-            Falar no WhatsApp
-          </button>
-        </div>
       </div>
       <div className="mx-auto mt-12 max-w-7xl border-t border-border/60 px-6 pt-6 text-center text-xs text-muted-foreground">
         © {new Date().getFullYear()} Luiz Gustavo. Todos os direitos reservados.
