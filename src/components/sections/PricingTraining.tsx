@@ -5,7 +5,6 @@ import { Check } from "lucide-react";
 export type Plan = {
   name: string;
   price: string;
-  subtitle: string;
   validity: string;
   features: string[];
   badge?: string;
@@ -32,7 +31,7 @@ export function PlanCard({ plan }: { plan: Plan }) {
       <div className="mt-4">
         <span className="text-3xl font-bold text-foreground">{plan.price}</span>
       </div>
-      <p className="mt-1 text-sm text-primary">{plan.subtitle}</p>
+      
       <p className="mt-1 text-xs text-muted-foreground">{plan.validity}</p>
 
       <ul className="mt-6 flex-1 space-y-3">
@@ -66,21 +65,18 @@ const trainingPlans: Plan[] = [
   {
     name: "Mensal",
     price: "R$ 279,90",
-    subtitle: "1 Plano Treino",
     validity: "*Válido por 1 mês",
     features: [...baseFeatures, "1 Mês Acompanhamento"],
   },
   {
     name: "Trimestral",
     price: "R$ 675,90",
-    subtitle: "3 Planos Treino",
     validity: "*Válido por 3 meses",
     features: [...baseFeatures, "3 Meses Acompanhamento"],
   },
   {
     name: "Anual",
     price: "R$ 1109,90",
-    subtitle: "12 Planos Treino",
     validity: "*Válido por 12 meses",
     badge: "Melhor custo-benefício",
     featured: true,
