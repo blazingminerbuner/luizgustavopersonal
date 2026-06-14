@@ -41,7 +41,6 @@ function Index() {
         <Transformations />
         <Founder />
         <Methodology />
-        <Event />
         <HowItWorks />
         <ForYou />
         <Benefits />
