@@ -65,7 +65,6 @@ const trainingPlans: Plan[] = [
   {
     name: "Mensal",
     price: "R$ 279,90",
-    subtitle: "1 Plano Treino",
     validity: "*Válido por 1 mês",
     features: [...baseFeatures, "1 Mês Acompanhamento"],
   },
