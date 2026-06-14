@@ -4,7 +4,6 @@ import { Hero } from "@/components/sections/Hero";
 import { Transformations } from "@/components/sections/Transformations";
 import { Founder } from "@/components/sections/Founder";
 import { Methodology } from "@/components/sections/Methodology";
-import { Event } from "@/components/sections/Event";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { ForYou } from "@/components/sections/ForYou";
 import { Benefits } from "@/components/sections/Benefits";
