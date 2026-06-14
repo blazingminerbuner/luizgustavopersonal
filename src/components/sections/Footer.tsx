@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
 import logoAsset from "@/assets/logo-lg.svg.asset.json";
 
 const socials = [
