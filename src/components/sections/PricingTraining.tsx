@@ -5,7 +5,6 @@ import { Check } from "lucide-react";
 export type Plan = {
   name: string;
   price: string;
-  subtitle: string;
   validity: string;
   features: string[];
   badge?: string;
