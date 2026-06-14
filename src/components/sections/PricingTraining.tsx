@@ -71,7 +71,6 @@ const trainingPlans: Plan[] = [
   {
     name: "Trimestral",
     price: "R$ 675,90",
-    subtitle: "3 Planos Treino",
     validity: "*Válido por 3 meses",
     features: [...baseFeatures, "3 Meses Acompanhamento"],
   },
