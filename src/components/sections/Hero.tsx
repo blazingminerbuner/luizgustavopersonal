@@ -11,9 +11,9 @@ export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-28 sm:pt-20 md:pt-24">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="flex flex-col items-center gap-10 md:flex-row md:items-center md:gap-16">
+        <div className="flex flex-col items-center gap-10 md:flex-row md:items-start md:gap-10">
           {/* Texto — esquerda no desktop, abaixo da imagem no mobile */}
-          <div className="order-2 flex w-full flex-1 flex-col items-center text-center md:order-1 md:items-start md:text-left">
+          <div className="order-2 flex w-full flex-col items-center text-center md:order-1 md:w-[55%] md:items-start md:pr-4 md:text-left">
             <motion.span
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6 }}
-              className="mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg"
+              className="mt-6 text-base text-muted-foreground sm:text-lg"
             >
               Mais do que um treino: uma consultoria completa, desenvolvida para acelerar sua evolução
               com método, acompanhamento e direção.
@@ -95,7 +95,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="order-1 w-full flex-1 md:order-2"
+            className="order-1 w-full md:order-2 md:w-[45%]"
           >
             <div className="relative overflow-hidden rounded-3xl border border-primary/15 shadow-[0_30px_80px_-30px_color-mix(in_oklab,var(--primary)_35%,transparent)]">
               <div
