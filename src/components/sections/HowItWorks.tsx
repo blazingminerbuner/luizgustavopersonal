@@ -2,9 +2,9 @@ import { Reveal, StaggerGroup, itemVariants } from "./Reveal";
 import { motion } from "motion/react";
 
 const steps = [
-  "Avaliação inicial detalhada",
-  "Entrega do plano de treino e dieta",
-  "Acompanhamento, ajustes e evolução contínua",
+  "Avaliação Completa",
+  "Montagem e entrega de plano e dieta",
+  "Monitoramento contínuo com ajustes para maximizar resultados.",
 ];
 
 export function HowItWorks() {
