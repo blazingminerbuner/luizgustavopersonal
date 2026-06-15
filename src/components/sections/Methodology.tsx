@@ -1,6 +1,6 @@
 import { Reveal, StaggerGroup, itemVariants } from "./Reveal";
 import { motion } from "motion/react";
-import { Target, Zap, TrendingUp, ShieldCheck, type LucideIcon } from "lucide-react";
+import { Stethoscope, ClipboardList, Settings2, Trophy, type LucideIcon } from "lucide-react";
 
 const steps: { title: string; desc: string; Icon: LucideIcon }[] = [
   {
