@@ -37,7 +37,7 @@ export function Methodology() {
             A estratégia por trás de cada resultado
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
-            Um processo estruturado para garantir evolução consistente e sustentável.
+            Uma metodologia focada em constância, progresso e resultados que permanecem.
           </p>
         </Reveal>
 
