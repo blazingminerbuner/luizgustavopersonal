@@ -1,8 +1,18 @@
 import { Reveal } from "./Reveal";
 import { Check, X } from "lucide-react";
 
-const yes = ["Quer método e processo", "Valoriza acompanhamento", "Busca evolução real"];
-const no = ["Quer milagres", "Não segue estratégia", "Procura plano genérico"];
+const yes = [
+  "Quer transformar o físico de forma sustentável",
+  "Precisa de direção e acompanhamento",
+  "Busca um plano adaptado à própria rotina",
+  "Está comprometido(a) com a evolução",
+];
+const no = [
+  "Procura atalhos",
+  "Quer copiar estratégias de outras pessoas",
+  "Não aceita ajustes e acompanhamento",
+  "Busca resultados imediatos sem processo",
+];
 
 export function ForYou() {
   return (
