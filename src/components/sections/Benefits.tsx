@@ -34,7 +34,7 @@ export function Benefits() {
             Benefícios
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            Ao adquirir agora, você receberá:
+            Ao entrar para a consultoria, você terá acesso a:
           </h2>
         </Reveal>
 
