@@ -1,27 +1,27 @@
 import { Reveal, StaggerGroup, itemVariants } from "./Reveal";
 import { motion } from "motion/react";
-import { Target, Zap, TrendingUp, ShieldCheck, type LucideIcon } from "lucide-react";
+import { Stethoscope, ClipboardList, Settings2, Trophy, type LucideIcon } from "lucide-react";
 
 const steps: { title: string; desc: string; Icon: LucideIcon }[] = [
   {
     title: "Diagnóstico de Performance",
     desc: "Identificamos exatamente o que está impedindo sua evolução.",
-    Icon: Target,
+    Icon: Stethoscope,
   },
   {
     title: "Estratégia Sob Medida",
     desc: "Um plano personalizado, de treino e dieta, para gerar o máximo resultado com o tempo que você possui.",
-    Icon: Zap,
+    Icon: ClipboardList,
   },
   {
     title: "Otimização Contínua",
     desc: "Analisamos sua resposta e realizamos ajustes sempre que necessário.",
-    Icon: TrendingUp,
+    Icon: Settings2,
   },
   {
     title: "Evolução Sem Retrocessos",
     desc: "Construímos resultados consistentes que resistem ao passar do tempo.",
-    Icon: ShieldCheck,
+    Icon: Trophy,
   },
 ];
 
