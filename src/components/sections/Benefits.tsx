@@ -5,23 +5,23 @@ import { Dumbbell, PlayCircle, MessageCircle, Video } from "lucide-react";
 const items = [
   {
     icon: Dumbbell,
-    title: "Treino completo e personalizado",
-    desc: "Com instruções detalhadas e técnicas corretas de execução, em até 7 dias úteis.",
+    title: "Treinamento 100% Personalizado",
+    desc: "Um plano desenvolvido de acordo com seus objetivos, rotina e nível de experiência para maximizar sua evolução.",
   },
   {
     icon: PlayCircle,
-    title: "Aplicativo com vídeos de execução",
-    desc: "Dos exercícios para te auxiliar na execução correta de cada movimento.",
+    title: "Aplicativo Exclusivo de Treinos",
+    desc: "Acesse seus treinos de qualquer lugar, com vídeos demonstrativos e orientações detalhadas para executar cada exercício com segurança.",
   },
   {
     icon: MessageCircle,
-    title: "Suporte direto comigo",
-    desc: "Para tirar suas dúvidas e avaliar seus feedbacks durante todo o processo.",
+    title: "Suporte e Acompanhamento Direto",
+    desc: "Tire dúvidas, receba direcionamentos e tenha acompanhamento próximo durante toda sua jornada.",
   },
   {
     icon: Video,
-    title: "Orientações através dos seus vídeos",
-    desc: "Avalio os padrões dos seus movimentos e faço as correções necessárias.",
+    title: "Análise Técnica dos Seus Exercícios",
+    desc: "Envie vídeos dos seus treinos e receba correções personalizadas para melhorar sua execução e potencializar resultados.",
   },
 ];
 
@@ -34,7 +34,7 @@ export function Benefits() {
             Benefícios
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            Ao adquirir agora, você receberá:
+            Ao entrar para a consultoria, você terá acesso a:
           </h2>
         </Reveal>
 
