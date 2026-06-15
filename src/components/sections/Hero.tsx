@@ -10,7 +10,7 @@ function BadgeMetodo() {
     <motion.span
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0ל0.2, duration: 0.5 }}
+      transition={{ delay: 0.2, duration: 0.5 }}
       className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm"
     >
       <Zap className="h-3.5 w-3.5" /> Método Comprovado
