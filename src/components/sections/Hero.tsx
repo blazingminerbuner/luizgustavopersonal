@@ -161,7 +161,7 @@ export function Hero() {
         />
 
         {/* Conteúdo textual posicionado mais abaixo */}
-        <div className="relative z-10 px-6 pb-20 pt-[70vh] text-center">
+        <div className="relative z-10 px-6 pb-20 text-center">
           <HeroContent />
         </div>
       </div>
