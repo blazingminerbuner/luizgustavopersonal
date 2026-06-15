@@ -131,7 +131,7 @@ export function Hero() {
                 }}
               >
                 <img
-                  src={heroTrainer.url}
+                  src={heroTrainer}
                   alt="Luiz Gustavo — Consultoria de Treino"
                   className="h-auto w-full object-cover"
                   loading="eager"
