@@ -42,7 +42,7 @@ export function ForYou() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="h-full rounded-2xl border border-destructive/30 bg-destructive/[0.07] p-8 shadow-[0_8px_30px_-10px_color-mix(in_oklab,var(--destructive)_20%,transparent)]">
-              <h3 className="text-xl font-semibold text-destructive">Não é para você se:</h3>
+              <h3 className="text-xl font-semibold text-destructive">Não é indicada para quem:</h3>
               <ul className="mt-6 space-y-4">
                 {no.map((item) => (
                   <li key={item} className="flex items-start gap-3 font-medium text-foreground/80">
