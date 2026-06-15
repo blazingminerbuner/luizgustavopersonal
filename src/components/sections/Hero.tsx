@@ -119,7 +119,7 @@ export function Hero() {
             <div className="relative overflow-hidden rounded-3xl border border-primary/15 shadow-[0_30px_80px_-30px_color-mix(in_oklab,var(--primary)_35%,transparent)]">
               <div
                 className="relative"
-                style={{	ext
+                style={{
                   WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)",
                   maskImage: "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)",
                   WebkitMaskComposite: "source-in",
