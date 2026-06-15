@@ -10,7 +10,26 @@ export function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden pt-28 sm:pt-20 md:pt-24">
-      <div className="mx-auto max-w-7xl px-6">
+      {/* Imagem desktop — absolute à direita, ocupando toda a altura com fade para o fundo */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.98 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+        className="pointer-events-none absolute inset-y-0 right-0 hidden w-[50%] md:block lg:w-[55%]"
+        style={{
+          WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 35%, black 100%)",
+          maskImage: "linear-gradient(to right, transparent 0%, black 35%, black 100%)",
+        }}
+      >
+        <img
+          src={heroTrainer.url}
+          alt="Luiz Gustavo — Consultoria de Treino"
+          className="h-full w-full object-cover object-left"
+          loading="eager"
+        />
+      </motion.div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center gap-10 md:flex-row md:items-start md:gap-10">
           {/* Texto — esquerda no desktop, abaixo da imagem no mobile */}
           <div className="order-2 flex w-full flex-col items-center text-center md:order-1 md:w-[55%] md:items-start md:pr-4 md:text-left">
@@ -90,12 +109,12 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Imagem — direita no desktop, acima do texto no mobile */}
+          {/* Imagem — acima do texto no mobile */}
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="order-1 w-full md:order-2 md:w-[45%]"
+            className="order-1 w-full md:hidden"
           >
             <div className="relative overflow-hidden rounded-3xl border border-primary/15 shadow-[0_30px_80px_-30px_color-mix(in_oklab,var(--primary)_35%,transparent)]">
               <div
