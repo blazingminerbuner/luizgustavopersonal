@@ -20,7 +20,7 @@ export function ForYou() {
       <div className="mx-auto max-w-7xl px-6">
         <Reveal className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            Essa consultoria é para você?
+            Essa consultoria não é para todo mundo!
           </h2>
         </Reveal>
 
