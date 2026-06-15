@@ -146,43 +146,41 @@ export function Hero() {
       </div>
 
       {/* ========== MOBILE ========== */}
-      <div className="relative flex min-h-[115vh] flex-col justify-end md:hidden">
-        {/* Imagem full-bleed */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute inset-0"
-        >
-          <img
-            src={heroTrainer}
-            alt="Luiz Gustavo — Consultoria de Treino"
-            className="h-full w-full object-cover object-[center_60%]"
-            loading="eager"
+      <div className="md:hidden">
+        {/* Imagem 1:1 com badge sobreposto */}
+        <div className="relative aspect-square w-full overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute inset-0"
+          >
+            <img
+              src={heroTrainer}
+              alt="Luiz Gustavo — Consultoria de Treino"
+              className="h-full w-full object-cover object-[center_60%]"
+              loading="eager"
+            />
+          </motion.div>
+
+          {/* Fade inferior da imagem para transição suave */}
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to bottom, transparent 70%, rgba(0,0,0,0.6) 100%)",
+            }}
           />
-        </motion.div>
 
-        {/* Overlay escuro para legibilidade do texto na parte inferior */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.92) 100%)",
-          }}
-        />
+          {/* Badge posicionado na parte inferior da imagem */}
+          <div className="absolute bottom-5 left-0 right-0 z-10 flex justify-center px-6">
+            <BadgeMetodo />
+          </div>
+        </div>
 
-        {/* Fade nas bordas para transição suave com o fundo preto */}
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            boxShadow:
-              "inset 0 80px 80px -40px var(--background), inset 0 -80px 80px -40px var(--background), inset 40px 0 60px -40px var(--background), inset -40px 0 60px -40px var(--background)",
-          }}
-        />
-
-        {/* Conteúdo textual posicionado na parte inferior */}
-        <div className="relative z-10 px-6 pb-20 pt-[55vh] text-center">
-          <HeroContent />
+        {/* Conteúdo textual abaixo da imagem */}
+        <div className="px-6 pb-16 pt-10 text-center">
+          <HeroTextContent />
         </div>
       </div>
     </section>
