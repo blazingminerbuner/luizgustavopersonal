@@ -34,7 +34,7 @@ export function Methodology() {
             Processo
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            A metodologia aplicada na consultoria
+            A estratégia por trás de cada resultado
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
             Um processo estruturado para garantir evolução consistente e sustentável.
