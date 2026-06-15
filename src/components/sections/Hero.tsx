@@ -126,7 +126,7 @@ export function Hero() {
       </div>
 
       {/* ========== MOBILE ========== */}
-      <div className="relative flex min-h-[85vh] flex-col justify-end md:hidden">
+      <div className="relative flex min-h-screen flex-col justify-end md:hidden">
         {/* Imagem full-bleed */}
         <motion.div
           initial={{ opacity: 0 }}
