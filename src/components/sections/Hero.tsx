@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 import { Zap, ArrowRight, Target, ShieldCheck, TrendingUp } from "lucide-react";
 import heroGroup from "@/assets/hero-group.webp.asset.json";
 
-const headline1 = "Transforme seu corpo com um método aplicado em";
-const accent = "resultados reais.";
+const headline1 = "Transforme hábitos, desenvolva performance e alcance sua";
+const accent = "melhor versão.";
 
 export function Hero() {
   const words = headline1.split(" ");
