@@ -68,8 +68,8 @@ export function Hero() {
             transition={{ delay: 0.9, duration: 0.6 }}
             className="mt-8 max-w-2xl text-base text-muted-foreground sm:text-lg"
           >
-            Consultoria Fitness Online com acompanhamento estratégico, individualizado e focado em
-            evolução consistente — não em soluções genéricas.
+            Mais do que um treino: uma consultoria completa, desenvolvida para acelerar sua evolução
+            com método, acompanhamento e direção.
           </motion.p>
 
           <motion.button
