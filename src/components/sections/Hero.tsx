@@ -120,9 +120,9 @@ export function Hero() {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             className="order-1 w-full md:hidden"
           >
-            <div className="relative overflow-hidden rounded-3xl border border-primary/15 shadow-[0_30px_80px_-30px_color-mix(in_oklab,var(--primary)_35%,transparent)]">
+            <div className="relative aspect-square overflow-hidden rounded-3xl border border-primary/15 shadow-[0_30px_80px_-30px_color-mix(in_oklab,var(--primary)_35%,transparent)]">
               <div
-                className="relative"
+                className="relative h-full w-full"
                 style={{
                   WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)",
                   maskImage: "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%)",
@@ -133,7 +133,7 @@ export function Hero() {
                 <img
                   src={heroTrainer}
                   alt="Luiz Gustavo — Consultoria de Treino"
-                  className="h-auto w-full object-cover"
+                  className="h-full w-full object-cover object-[center_60%]"
                   loading="eager"
                 />
               </div>
