@@ -4,23 +4,23 @@ import { Target, Zap, TrendingUp, ShieldCheck, type LucideIcon } from "lucide-re
 
 const steps: { title: string; desc: string; Icon: LucideIcon }[] = [
   {
-    title: "Avaliação Completa",
-    desc: "Análise física, rotina, histórico e objetivos antes de qualquer prescrição.",
+    title: "Diagnóstico de Performance",
+    desc: "Identificamos exatamente o que está impedindo sua evolução.",
     Icon: Target,
   },
   {
-    title: "Estratégia Individual",
-    desc: "Treino e dieta ajustados para adesão, rotina e evolução progressiva.",
+    title: "Estratégia Sob Medida",
+    desc: "Um plano personalizado, de treino e dieta, para gerar o máximo resultado com o tempo que você possui.",
     Icon: Zap,
   },
   {
-    title: "Acompanhamento Contínuo",
-    desc: "Ajustes frequentes com base na resposta do corpo.",
+    title: "Otimização Contínua",
+    desc: "Analisamos sua resposta e realizamos ajustes sempre que necessário.",
     Icon: TrendingUp,
   },
   {
-    title: "Evolução Sustentável",
-    desc: "Resultado que se mantém ao longo do tempo.",
+    title: "Evolução Sem Retrocessos",
+    desc: "Construímos resultados consistentes que resistem ao passar do tempo.",
     Icon: ShieldCheck,
   },
 ];
