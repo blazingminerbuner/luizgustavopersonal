@@ -33,7 +33,7 @@ export function Transformations() {
             Transformações
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            Resultados reais. Corpos reais. Processos reais.
+            Cada corpo é único. Cada estratégia também.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
             Cada transformação é resultado de um processo individualizado e acompanhamento contínuo.
