@@ -17,8 +17,12 @@ export function Hero() {
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         className="pointer-events-none absolute inset-y-0 right-0 hidden w-[50%] md:block lg:w-[55%]"
         style={{
-          WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 35%, black 100%)",
-          maskImage: "linear-gradient(to right, transparent 0%, black 35%, black 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to right, transparent 0%, black 35%, black 100%), linear-gradient(to bottom, black 0%, black 70%, transparent 100%)",
+          maskImage:
+            "linear-gradient(to right, transparent 0%, black 35%, black 100%), linear-gradient(to bottom, black 0%, black 70%, transparent 100%)",
+          WebkitMaskComposite: "source-in",
+          maskComposite: "intersect",
         }}
       >
         <img
