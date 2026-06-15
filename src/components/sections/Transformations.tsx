@@ -36,7 +36,7 @@ export function Transformations() {
             Cada corpo é único. Cada estratégia também.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
-            Cada transformação é resultado de um processo individualizado e acompanhamento contínuo.
+            Por trás de cada resultado existe um método personalizado, acompanhamento constante e decisões ajustadas ao longo do processo.
           </p>
         </Reveal>
       </div>
