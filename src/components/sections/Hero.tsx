@@ -28,7 +28,7 @@ export function Hero() {
         <img
           src={heroTrainer}
           alt="Luiz Gustavo — Consultoria de Treino"
-          className="h-full w-full object-cover object-top"
+          className="h-full w-full object-cover object-[center_65%]"
           loading="eager"
         />
       </motion.div>
