@@ -126,7 +126,7 @@ export function Hero() {
       </div>
 
       {/* ========== MOBILE ========== */}
-      <div className="relative flex min-h-screen flex-col justify-end md:hidden">
+      <div className="relative flex min-h-[115vh] flex-col justify-end md:hidden">
         {/* Imagem full-bleed */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -147,7 +147,7 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.88) 100%)",
+              "linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(0,0,0,0.5) 65%, rgba(0,0,0,0.92) 100%)",
           }}
         />
 
@@ -161,7 +161,7 @@ export function Hero() {
         />
 
         {/* Conteúdo textual posicionado na parte inferior */}
-        <div className="relative z-10 px-6 pb-12 text-center">
+        <div className="relative z-10 px-6 pb-20 pt-[55vh] text-center">
           <HeroContent />
         </div>
       </div>
