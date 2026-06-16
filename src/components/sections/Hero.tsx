@@ -118,7 +118,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="pointer-events-none absolute top-16 -bottom-10 right-0 w-[58%] lg:w-[62%]"
+          className="pointer-events-none absolute top-0 -bottom-20 right-0 w-[58%] lg:w-[62%]"
           style={{
             WebkitMaskImage:
               "linear-gradient(to right, transparent 0%, black 30%, black 100%), linear-gradient(to bottom, black 0%, black 75%, transparent 100%)",
