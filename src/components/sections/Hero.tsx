@@ -131,7 +131,7 @@ export function Hero() {
           <img
             src={heroTrainer.url}
             alt="Luiz Gustavo — Consultoria de Treino"
-            className="h-full w-full object-cover object-[center_60%]"
+            className="h-full w-full object-cover object-[center_40%]"
             loading="eager"
           />
         </motion.div>
