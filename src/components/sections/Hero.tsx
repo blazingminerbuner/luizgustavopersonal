@@ -119,20 +119,18 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="pointer-events-none absolute top-0 -bottom-40 right-0 w-[65%] lg:w-[68%]"
+          className="pointer-events-none absolute inset-y-0 right-0 w-[55%] lg:w-[58%]"
           style={{
             WebkitMaskImage:
-              "linear-gradient(to right, transparent 0%, black 30%, black 100%), linear-gradient(to bottom, black 0%, black 75%, transparent 100%)",
+              "linear-gradient(to right, transparent 0%, black 25%, black 100%)",
             maskImage:
-              "linear-gradient(to right, transparent 0%, black 30%, black 100%), linear-gradient(to bottom, black 0%, black 75%, transparent 100%)",
-            WebkitMaskComposite: "source-in",
-            maskComposite: "intersect",
+              "linear-gradient(to right, transparent 0%, black 25%, black 100%)",
           }}
         >
           <img
-            src={heroTrainer.url}
+            src={heroGustavoDesk.url}
             alt="Luiz Gustavo — Consultoria de Treino"
-            className="h-full w-full object-contain object-top"
+            className="h-full w-full object-cover object-center"
             loading="eager"
           />
         </motion.div>
