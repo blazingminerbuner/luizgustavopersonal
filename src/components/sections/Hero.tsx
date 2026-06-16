@@ -129,7 +129,7 @@ export function Hero() {
           }}
         >
           <img
-            src={heroTrainer}
+            src={heroTrainer.url}
             alt="Luiz Gustavo — Consultoria de Treino"
             className="h-full w-full object-cover object-[center_60%]"
             loading="eager"
@@ -156,7 +156,7 @@ export function Hero() {
             className="absolute inset-0"
           >
             <img
-              src={heroTrainer}
+              src={heroTrainer.url}
               alt="Luiz Gustavo — Consultoria de Treino"
               className="h-full w-full object-cover object-[center_60%]"
               loading="eager"
