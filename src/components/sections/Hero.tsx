@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Zap, ArrowRight, Target, ShieldCheck, TrendingUp } from "lucide-react";
-import heroTrainer from "@/assets/hero-trainer-wide.png.asset.json";
+import heroTrainer from "@/assets/hero-trainer-wide.png";
 
 const headline1 = "Transforme hábitos, desenvolva performance e alcance sua";
 const accent = "melhor versão.";
@@ -129,7 +129,7 @@ export function Hero() {
           }}
         >
           <img
-            src={heroTrainer.url}
+            src={heroTrainer}
             alt="Luiz Gustavo — Consultoria de Treino"
             className="h-full w-full object-cover object-[center_60%]"
             loading="eager"
@@ -156,7 +156,7 @@ export function Hero() {
             className="absolute inset-0"
           >
             <img
-              src={heroTrainer.url}
+              src={heroTrainer}
               alt="Luiz Gustavo — Consultoria de Treino"
               className="h-full w-full object-cover object-[center_60%]"
               loading="eager"
