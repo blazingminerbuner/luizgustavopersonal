@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Zap, ArrowRight, Target, ShieldCheck, TrendingUp } from "lucide-react";
-import heroTrainer from "@/assets/hero-trainer-wide.png";
+import heroTrainer from "@/assets/hero-trainer-wide.jpg.asset.json";
 
 const headline1 = "Transforme hábitos, desenvolva performance e alcance sua";
 const accent = "melhor versão.";
