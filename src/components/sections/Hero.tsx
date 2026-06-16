@@ -118,12 +118,12 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="pointer-events-none absolute top-16 bottom-0 right-0 w-[50%] lg:w-[55%]"
+          className="pointer-events-none absolute top-16 -bottom-10 right-0 w-[58%] lg:w-[62%]"
           style={{
             WebkitMaskImage:
-              "linear-gradient(to right, transparent 0%, black 35%, black 100%), linear-gradient(to bottom, black 0%, black 70%, transparent 100%)",
+              "linear-gradient(to right, transparent 0%, black 30%, black 100%), linear-gradient(to bottom, black 0%, black 75%, transparent 100%)",
             maskImage:
-              "linear-gradient(to right, transparent 0%, black 35%, black 100%), linear-gradient(to bottom, black 0%, black 70%, transparent 100%)",
+              "linear-gradient(to right, transparent 0%, black 30%, black 100%), linear-gradient(to bottom, black 0%, black 75%, transparent 100%)",
             WebkitMaskComposite: "source-in",
             maskComposite: "intersect",
           }}
@@ -131,7 +131,7 @@ export function Hero() {
           <img
             src={heroTrainer.url}
             alt="Luiz Gustavo — Consultoria de Treino"
-            className="h-full w-full object-cover object-[center_45%]"
+            className="h-full w-full object-cover object-[center_35%]"
             loading="eager"
           />
         </motion.div>
