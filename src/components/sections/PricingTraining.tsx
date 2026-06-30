@@ -9,6 +9,7 @@ export type Plan = {
   features: string[];
   badge?: string;
   featured?: boolean;
+  url?: string;
 };
 
 export function PlanCard({ plan }: { plan: Plan }) {
