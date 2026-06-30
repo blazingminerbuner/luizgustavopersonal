@@ -9,6 +9,7 @@ export type Plan = {
   features: string[];
   badge?: string;
   featured?: boolean;
+  url?: string;
 };
 
 export function PlanCard({ plan }: { plan: Plan }) {
@@ -43,12 +44,23 @@ export function PlanCard({ plan }: { plan: Plan }) {
         ))}
       </ul>
 
-      <button
-        type="button"
-        className="btn-glow mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
-      >
-        Escolher
-      </button>
+      {plan.url ? (
+        <a
+          href={plan.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-glow mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+        >
+          Escolher
+        </a>
+      ) : (
+        <button
+          type="button"
+          className="btn-glow mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+        >
+          Escolher
+        </button>
+      )}
     </motion.div>
   );
 }
@@ -67,20 +79,23 @@ const trainingPlans: Plan[] = [
     name: "Mensal",
     price: "R$ 279,90",
     validity: "*Válido por 1 mês",
+    url: "https://pay.kiwify.com.br/Ccg5YeT",
     features: [...baseFeatures, "1 Mês Acompanhamento"],
   },
   {
     name: "Trimestral",
     price: "R$ 675,90",
     validity: "*Válido por 3 meses",
+    url: "https://pay.kiwify.com.br/vEujLbs",
     features: [...baseFeatures, "3 Meses Acompanhamento"],
   },
   {
-    name: "Anual",
+name: "Anual",
     price: "R$ 1109,90",
     validity: "*Válido por 12 meses",
     badge: "Melhor custo-benefício",
     featured: true,
+    url: "https://pay.kiwify.com.br/9n3F8Ft",
     features: [...baseFeatures, "12 Meses Acompanhamento"],
   },
 ];
