@@ -26,12 +26,8 @@ export function Header() {
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <a href="#top" className="flex items-center gap-2">
-          <img src={logoAsset.url} alt="Luiz Gustavo" className="h-12 w-auto" />
-        </a>
-
-        <nav className="hidden items-center gap-8 md:flex">
+      <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-center px-6">
+        <nav className="absolute left-6 hidden items-center gap-8 md:flex">
           {links.map((l) => (
             <a
               key={l.href}
@@ -43,12 +39,9 @@ export function Header() {
           ))}
         </nav>
 
-        <button
-          type="button"
-          className="btn-glow inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
-        >
-          Entrar na Consultoria
-        </button>
+        <a href="#top" className="flex items-center gap-2">
+          <img src={logoAsset.url} alt="Luiz Gustavo" className="h-12 w-auto" />
+        </a>
       </div>
     </header>
   );
