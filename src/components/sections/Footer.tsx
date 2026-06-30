@@ -15,8 +15,8 @@ function TikTokIcon({ className }: { className?: string }) {
 }
 
 const socials = [
-  { label: "Instagram", href: "https://instagram.com", Icon: Instagram },
-  { label: "TikTok", href: "https://tiktok.com", Icon: TikTokIcon },
+  { label: "Instagram", href: "https://www.instagram.com/personalluizgustavo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", Icon: Instagram },
+  { label: "TikTok", href: "https://www.tiktok.com/@personalluizgustavo?is_from_webapp=1&sender_device=pc", Icon: TikTokIcon },
 ];
 
 export function Footer() {
