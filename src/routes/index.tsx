@@ -50,6 +50,7 @@ function Index() {
         <FinalCTA />
       </main>
       <Footer />
+      <FloatingMobileButton />
     </div>
   );
 }
