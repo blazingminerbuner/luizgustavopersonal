@@ -124,6 +124,26 @@
           mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
 }
 
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--primary), color-mix(in oklab, var(--primary) 60%, black));
+}
+
+.shadow-glow-strong {
+  box-shadow: 0 0 25px color-mix(in oklab, var(--primary) 50%, transparent);
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px color-mix(in oklab, var(--primary) 40%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 30px color-mix(in oklab, var(--primary) 70%, transparent);
+  }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
 .btn-glow:hover {
   box-shadow: 0 10px 30px -10px color-mix(in oklab, var(--primary) 55%, transparent);
   transform: translateY(-1px);

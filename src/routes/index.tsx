@@ -11,6 +11,7 @@ import { PricingTraining } from "@/components/sections/PricingTraining";
 import { PricingDietTraining } from "@/components/sections/PricingDietTraining";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
+import { FloatingMobileButton } from "@/components/sections/FloatingMobileButton";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -49,6 +50,7 @@ function Index() {
         <FinalCTA />
       </main>
       <Footer />
+      <FloatingMobileButton />
     </div>
   );
 }
