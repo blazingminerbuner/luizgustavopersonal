@@ -1,5 +1,5 @@
 import { Reveal } from "./Reveal";
-import luizGustavoPhoto from "@/assets/luiz-gustavo.webp.asset.json";
+import luizGustavoPhoto from "@/assets/founder-luiz-gustavo.jpeg.asset.json";
 
 export function Founder() {
   return (
