@@ -44,12 +44,23 @@ export function PlanCard({ plan }: { plan: Plan }) {
         ))}
       </ul>
 
-      <button
-        type="button"
-        className="btn-glow mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
-      >
-        Escolher
-      </button>
+      {plan.url ? (
+        <a
+          href={plan.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-glow mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+        >
+          Escolher
+        </a>
+      ) : (
+        <button
+          type="button"
+          className="btn-glow mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
+        >
+          Escolher
+        </button>
+      )}
     </motion.div>
   );
 }
