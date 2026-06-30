@@ -79,7 +79,7 @@ const trainingPlans: Plan[] = [
     features: [...baseFeatures, "3 Meses Acompanhamento"],
   },
   {
-.googleapis  name: "Anual",
+name: "Anual",
     price: "R$ 1109,90",
     validity: "*Válido por 12 meses",
     badge: "Melhor custo-benefício",
