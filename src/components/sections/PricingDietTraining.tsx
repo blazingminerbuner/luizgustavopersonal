@@ -49,11 +49,7 @@ export function PricingDietTraining() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 border-l-2 border-primary/60 pl-4 text-xs italic text-muted-foreground">
-            P.S: As dietas são montadas pelas nutricionistas da minha equipe!
-          </p>
         </Reveal>
-
       </div>
     </section>
   );
