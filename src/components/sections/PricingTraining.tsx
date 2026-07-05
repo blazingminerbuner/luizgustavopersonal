@@ -72,6 +72,7 @@ const baseFeatures = [
   "Vídeos de Execução",
   "Protocolo alimentar",
   "Contato via Whatsapp",
+  "As dietas são montadas pelas nutricionistas da minha equipe",
 ];
 
 const trainingPlans: Plan[] = [
