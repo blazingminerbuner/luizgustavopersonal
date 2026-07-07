@@ -68,6 +68,9 @@ function HeroTextContent() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1.05, duration: 0.5 }}
         type="button"
+        onClick={() => {
+          document.getElementById("planos")?.scrollIntoView({ behavior: "smooth" });
+        }}
         className="btn-glow mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground"
       >
         Entrar na Consultoria
