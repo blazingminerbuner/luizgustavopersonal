@@ -16,6 +16,7 @@ export function FinalCTA() {
             </div>
             <button
               type="button"
+              onClick={() => document.getElementById("planos")?.scrollIntoView({ behavior: "smooth" })}
               className="btn-glow relative mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground"
             >
               Quero começar minha transformação
